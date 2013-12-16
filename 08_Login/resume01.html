@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    	<title>Resume</title>
+    	<link rel="stylesheet" href="style.css" type="text/css">
+    	<link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic,700' rel='stylesheet' type='text/css'>
+    	<script type="text/javascript" src="js/main.js"></script>
+    	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script>
+  			$(function() {
+    		$( "#draggable" ).draggable();
+    		$( "#draggable2" ).draggable();
+  			});
+  		</script>
+  		
+		<script>
+			function myFunction()
+			{  // Find the element
+				x=document.getElementById("videoShow").style.display = 'block';    // Change the content
+				x=document.getElementById("fiveEvent").style.display = 'none';    // Change the content
+				x=document.getElementById("fourthEvent").style.display = 'none';
+				x=document.getElementById("slideShare").style.display = 'none';
+				
+			}
+			function myFunction2()
+			{  // Find the element
+				x=document.getElementById("slideShare").style.display = 'block';    // Change the content
+				x=document.getElementById("fiveEvent").style.display = 'none';    // Change the content
+				x=document.getElementById("fourthEvent").style.display = 'none';
+				x=document.getElementById("videoShow").style.display = 'none'; 
+				
+			}
+		</script>
+	</head>
+
+	<body>
+			<h1>
+				Resume 01
+			</h1>
+
+			<h2 id="description">
+				Your resume description
+			</h2>
+
+			<canvas id="myCanvas" width="1258" height="520">
+			</canvas>
+
+			<div id="firstEvent" class="arcEvents" onclick="myFunction()">
+			</div>
+
+			<div id="videoShow">
+				<iframe src="//player.vimeo.com/video/81557907" width="350" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+				</iframe> 
+				<div id="time"><strong>Date:</strong> August 2012</div>
+				<div id="ppl"><strong>Collaborators:</strong> Elis Elain</div>
+			</div>
+
+			<div id="secondEvent" class="arcEvents" onclick="myFunction2()">
+			</div>
+
+			<div id="slideShare">
+				<iframe src="http://www.slideshare.net/slideshow/embed_code/28205326" width="397" height="276" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/SusseSnderbyJensen/mozfest-learning-path"  target="_blank"> </a> </strong> <strong><a href="http://www.slideshare.net/SusseSnderbyJensen" target="_blank"></a></strong> </div>
+				<div id="time"><strong>Date:</strong> June 2013</div>
+				<div id="ppl"><strong>Tag:</strong> Badges</div>
+			</div>
+
+			<div id="thirdEvent" class="arcEvents">
+			</div>
+
+
+			<div id="fourthEvent" class="slideEvent">
+				<p>December 2013</P>
+			</div>
+
+			<div id="fiveEvent" class="slideEvent">
+				<p>New York</P>
+			</div>
+
+			<div id="draggable">
+  					<p>Past</p>
+			</div>
+			<div id="draggable2">
+  					<p>Present</p>
+			</div>
+
+			<div class="timeline"> 
+
+			</div>
+
+			<div id="sidebar">
+				<p id="plus">+</p>
+				<p id="text">Edit Resume<p>
+				<p id="drag"> Drag<br>n'<br>Drop</p>
+			</div>
+
+
+
+		<footer>
+	            	<p>&copy;All rights Susse Sønderby</p>
+		</footer>
+	</body>
+
+	
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var x = canvas.width / 2;
+      var y = canvas.height/1.2;
+      var radius = 330;
+      var startAngle = 1 * Math.PI;
+      var endAngle = 2 * Math.PI;
+      var counterClockwise = false;
+
+      context.beginPath();
+      context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+      context.lineWidth = 10;
+
+      // line color
+      context.strokeStyle = '#545454';
+      context.stroke();
+    </script>
+
+
+</html>
