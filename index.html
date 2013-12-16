@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning Path & Future Skill Sharing </title>
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="https://raw.github.com/MrRio/jsPDF/master/dist/jspdf.min.js"/></script>	
+	</head>
+
+	<body>
+		<header>
+			<div class="top">
+				<p><img src="img/MozFest_logo-01.png" width="2%">Moz Fest '2013</p>
+			</div>
+		</header>
+			<div id="flip">Instructions</div>
+			<div id="panel"><br>Drag the elements around to explore effective way of communicate your learning path</div>		
+				<!--dropDownInstruction-->
+				<script> 
+					$(document).ready(function(){
+					  $("#flip").click(function(){
+					    $("#panel").slideToggle("slow");
+					  });
+					});
+				</script>
+				
+			<div class="navBar">
+				<img src="img/titel.png" width="30%">
+			</div>
+
+		<div class="subNavBar">
+
+				<!--Drag Element -->
+				<script>
+					$(function () {
+						/* basic */
+						$("#dragArea div[id^='drag']").draggable({
+							containment: "#dragArea",
+							stack: ".drag"
+						});
+						/* make draggable div always on top */
+						$("div[id^='drag']").mousedown(function () {
+							$("div[id^='drag']").each(function () {
+								var seq = $(this).attr("id").replace("drag", "");
+								$(this).css('z-index', seq);
+							});
+						});
+					});
+				</script>
+
+				
+	    		<div id="dragArea"> 
+					<div id="resume"><p><span id="yourResume">YOUR RESUME</span></P></div>
+	    			<ul>  
+	    				<li>
+			        		<div id="drag1" class="drag">NAME</img></div>
+						</li>
+						<li>
+			        		<div id="drag2" class="drag">EXPERIENCE</div>
+			        	</li>
+			        	<li>
+			        		<div id="drag3" class="drag">SKILLS</div>
+			        	</li>
+			        	<li>
+			        		<div id="drag4" class="drag">TITEL</div>
+			        	</li>
+			        </ul>
+			        <ul>
+			        	<li>
+			        		<div  id="drag5" class="drag"><img src="img/logo_Linkedin.png" width="30%"></img></div>
+						</li>
+						<li>
+			        		<div  id="drag6" class="drag"><img src="img/logo_twitter.png" width="30%"></div>
+						</li>
+						<li>
+			        		<div  id="drag7" class="drag"><img src="img/logo_tumblr.png" alt="tumblr" width="30%"></div>
+						</li>
+						<li>
+			        		<div  id="drag8" class="drag"><img src="img/contact.png" alt="contact" width="30%"></div>
+						</li>
+						<li>
+			        		<div  id="drag10" class="drag"><img src="img/video.png" alt="video" width="80%" ></div>
+						</li>
+						<li>
+			        		<div  id="drag11" class="drag"><img src="img/worldMap.png" alt="worldmap" width="60%" ></div>
+						</li>
+						<li>
+			        		<div  id="drag9" class="drag"><img src="img/podcast.png" alt="podcast" width="40%"></div>
+						</li>
+			        </ul>
+			       
+		        	
+	    		</div>
+	    		<div class="instructions">
+					<p>Explore the possibilities of your future resume!
+	            	</p>
+				</div>
+					
+
+				
+		<footer>
+				<div>
+	            	<a href="http://mozillafestival.org/"><img src="img/MozFest.png"><img></a>
+	           	</div>
+	            <div>
+	            	<p>Part of <a href="http://mozillafestival.org/schedule/">Skills and Badges<br></a> #mozFest 2013 London, UK <br><a href="http://sussesonderby.tumblr.com">For more information<a></p>
+	            </div>
+	            <div id="footInfo">
+	           		<a href="http://openbadges.org/"><img src="img/openbagdes.png" width="50%"><img></a>
+	            </div>	
+		</footer>
+	</body>
+		
+</html>

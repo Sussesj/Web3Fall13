@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+
+<script>
+
+if (localStorage.pagecount) { 
+	localStorage.pagecount=Number(localStorage.pagecount) +1; 
+
+} 
+else { 
+	localStorage.pagecount=1; 
+} 
+
+document.write("Number of Visits: " + localStorage.pagecount + " time(s)."); 
+
+if(localStorage.pagecount == 55){
+	document.body.style.backgroundColor="#575659";
+}else if (localStorage.pagecount == 56){
+	document.body.style.backgroundColor="#6D6D70";
+}else if (localStorage.pagecount == 57){
+	document.body.style.backgroundColor="#88888C";
+}else if (localStorage.pagecount == 58){
+	document.body.style.backgroundColor="#A8A8AD";
+}else if (localStorage.pagecount == 59){
+	document.body.style.backgroundColor="#C1C1C7";
+}else if (localStorage.pagecount == 60){
+	document.body.style.backgroundColor="#E6E6ED";
+}
+
+</script>
+
+</html>

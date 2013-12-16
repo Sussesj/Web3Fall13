@@ -1,0 +1,159 @@
+  body{
+        background-color:#E8E9EA;
+        font-family:"Arial",Helvetica,Sans-Serif;
+        }
+        h1 {
+        color:#E8E9EA;
+        text-align: center;
+        }
+        p {color:#6B8596;
+        text-align: center;}
+        .container {
+        position: relative;
+        width: 80%;
+        min-width: 800px;
+        height: 100%;
+        margin-left:auto;
+        margin-right:auto;
+        }  
+        .bluebox {
+        background: #2F414C;
+        color: white;
+        max-width: none;
+        top: 0 px;
+        height: 130px;
+        margin: none;
+        padding: 20px;
+        margin-left:auto;
+        margin-right:auto;
+        }
+        .whiteLine{
+        position: absolute;
+        background:white;
+        height:200%;
+        width:2px;
+        z-index:-1;
+        margin-left:246px;
+        }
+        .github {
+        position: absolute;
+		left: 560px;
+		top: 135px;
+      	}
+        .twitter {
+        position: absolute;
+		left: 600px;
+		top: 135px;
+      	}
+        .tumblr {
+        position: absolute;
+		left: 640px;
+		top: 135px;
+      	}
+        .BadgesMentor {
+        position: absolute;
+        left: 960px;
+        top: 425px;
+        }
+        .BadgesWriter{
+        position: absolute;
+        left: 960px;
+        top: 220px;
+        }
+        .BadgePartnership{
+        position: absolute;
+        left: 960px;
+        top: 670px;
+        }
+        .experience{
+        }
+        .listExperienceRelevant{
+        left:400px;
+        text-align:left;
+        text-align:justify;
+        color:#6B8596;
+        }
+      .listExperienceLast{
+        left:400px;
+        text-align:left;
+        text-align:justify;
+        color:#6B8596;
+        }
+        .listExperienceOther{
+        left:400px;
+        text-align:right;
+        text-align:justify;
+        color:#6B8596;
+        }
+        #flipRelevant
+        {
+        border-radius: 50%;
+        border-style:solid;
+        border-width:5px;
+        margin-top:20px;
+        border-color:white;
+	    width: 30px;
+	    height: 30px;
+        }
+        #panelRelevant{
+        display:none;
+        }
+        #flipRelevant{
+        display:center;
+        text-align: center;
+        background-color:#6B8596;
+        }
+        #panelRelevant,#flipRelevant
+        {
+        padding:5px;
+        left:40px;
+        margin-left:220px;
+        }  
+        #flipOther
+        {
+        border-radius: 50%;
+        border-style:solid;
+        border-width:5px;
+        margin-top:20px;
+        border-color:white;
+	    width: 30px;
+	    height: 30px;
+        }
+        #panelOther{
+        display:none;
+        }
+        #flipOther{
+        display:center;
+        text-align: center;
+        background-color:#6B8596;
+        }
+        #panelOther,#flipOther
+        {
+        padding:5px;
+        left:40px;
+        margin-left:220px;
+        }
+        #flipLast
+        {
+        border-radius: 50%;
+        border-style:solid;
+        border-width:5px;
+        margin-top:20px;
+        border-color:white;
+	    width: 30px;
+	    height: 30px;
+        }
+        #panelLast{
+        display:none;
+        }
+        #flipLast{
+        display:center;
+        text-align: center;
+        background-color:#6B8596;
+        }
+        #panelLast,#flipLast
+        {
+        padding:5px;
+        left:40px;
+        margin-left:220px;
+        }

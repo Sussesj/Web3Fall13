@@ -1,0 +1,16 @@
+body {
+	background-color: lime;
+}
+
+div {
+  background: white;
+}
+
+div:Hover {
+	background: #dddddf;
+}
+
+div:hover:after  {
+   background:  #dddddf;
+  
+}

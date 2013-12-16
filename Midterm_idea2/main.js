@@ -1,0 +1,15 @@
+$(document).ready(function(){
+  $("#flipRelevant").click(function(){
+    $("#panelRelevant").slideDown("slow");
+  });
+});
+  $(document).ready(function(){
+  $("#flipOther").click(function(){
+    $("#panelOther").slideDown("slow");
+  });
+});
+  $(document).ready(function(){
+  $("#flipLast").click(function(){
+    $("#panelLast").slideDown("slow");
+  });
+});

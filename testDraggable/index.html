@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		<!--<script type="text/javascript" src="main.js"></script>-->
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>	
+	</head>
+	<body>
+		<style type="text/css">
+		.drag {
+		    width: 70px;
+		    height: 70px;
+		    line-height: 70px;
+		    border: 1px solid black;
+		    cursor: pointer;
+		    border-radius: 10px;
+		    float: left;
+		    margin-left: 5px;
+		    text-align: center;
+		    font-size: 12px;
+		}
+
+		#dragbasic {
+		    width: 500px;
+		    height: 150px;
+		    border: 1px solid gray;
+		    background-color: #E0F0FF;
+		}
+
+		</style>
+		<!-- Javascript -->
+		<script>
+		$(function () {
+			/* basic */
+			$("#dragbasic div[id^='drag']").draggable({
+				containment: "#dragbasic",
+				stack: ".drag"
+			});
+
+
+			/* make draggable div always on top */
+			$("div[id^='drag']").mousedown(function () {
+				$("div[id^='drag']").each(function () {
+					var seq = $(this).attr("id").replace("drag", "");
+					$(this).css('z-index', seq);
+				});
+			});
+		});
+		</script>
+   
+ 
+	<div style="float:left;margin-left:30px;">
+	    <div id="dragbasic">   
+	        <div id="drag1" class="drag" style="background-color:orange">Drag me</div>
+	    </div>
+	</div>
+
+	</body>
+</html>
