@@ -1,0 +1,103 @@
+/*Theme Name: myPersonalSite
+Theme URI: vahahd
+Description:sfheehe
+Author: susse
+Author URI: dhhd.com
+Version: 0.1
+Tags:
+ 
+License:
+License URI:
+ 
+General comments (optional).*/
+
+body{
+	background: #fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.navBar {
+	background:#FBFFFF;
+	height: 70px;
+	width: 100%;
+  box-shadow: 5px 5px 4px #CED1D1;
+}
+
+.navBar ul {
+  overflow: auto;
+  list-style-type: none;
+}
+ 
+.navBar li {
+  float: left;
+  font-size: 1em;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+#Back{
+  margin-left:-20%;
+}
+
+a {
+	color:#6E6E6E;
+	text-decoration:none;
+}
+
+.frame {
+  	width: 95%;
+  	margin: 0px auto;
+  	margin-top: 5%;
+}
+
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+
+footer {
+    padding-bottom: 2%;
+}
+footer img {
+    margin-left: 47.5%;
+
+}
+footer p {
+  clear: left;
+  position: center;
+  font-size: 0.7em;
+  text-align: center;
+}
+
